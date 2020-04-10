@@ -1,7 +1,7 @@
 import {addPersistedStateWatcher, restorePersistedState} from "../helpers/storeHelpers";
 
 export default ({store, app: {$cookies}}) => {
-    const modules = ['user'];
+    const modules = ['user.age', 'user.city'];
 
     modules.forEach((module) => {
         restorePersistedState(store, $cookies, module);
