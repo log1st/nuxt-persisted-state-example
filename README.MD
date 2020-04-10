@@ -2,7 +2,7 @@
 
 Problem: you want to share some Vuex-state modules between on server-client session in Nuxt SSR mode
 
-Decision:
+Decision (already implemented but described below):
 1. Install [cookie-universal-nuxt](https://github.com/microcipcip/cookie-universal/tree/master/packages/cookie-universal-nuxt)
 2. Create [restore mutation](./store/mutations.js)
 3. Create [plugin](./plugins/persistedState.js) where you should restore modules from storage and subscribe store to these modules mutations.
