@@ -1,0 +1,1 @@
+# Nuxt  Persistate State (via cookie-universal-nuxt)
